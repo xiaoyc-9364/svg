@@ -268,9 +268,71 @@
        <rect x="20" y="20" width="100" height="100" style="fill:url(#focal-set); stroke: black;" />
     </svg>
 
+    <h2>第九章</h2>
+    <svg width="150px" height="200px" xmlns="http://www.w3c.org/2000/svg">
+        <path d="M 20 10, 20 120 M 10 30 100 30 M 10 70 100 70 M 10 110 100 110" style="stroke: gray;" />
+        <text x="20" y="30">Simplest Text</text>
+        <text x="20" y="70" style="stroke:black;">Outlined Text</text>
+        <text x="20" y="110" style="stroke:black; stroke-width:0.5; fill:none;">Outlined Text</text>
+    </svg>
+    <svg width="350px" height="200px" xmlns="http://www.w3c.org/2000/svg">
+        <g style="font-size: 18pt" > 
+            <text x="20" y="20" style="font-weight:bold;" >bold</text> 
+            <text x="120" y="20" style="font-style:italic;" >italic</text> 
+            <text x="20" y="60" style="text-decoration:underline;" >under</text>
+            <text x="120" y="60" style="text-decoration:overline;" >over</text> 
+            <text x="200" y="60" style="text-decoration:line-through;" >through</text> 
+            <text x="20" y="90" style="word-spacing: 10pt;" >more word space</text> 
+            <text x="20" y="120" style="word-spacing: -3pt;" >less word space</text> 
+            <text x="20" y="150" style="letter-spacing: 5pt;" >wide letter space</text> 
+            <text x="20" y="180" style="letter-spacing: -1pt;" >narrow letter space</text> 
+        </g>
+    </svg>
+    <svg width="150px" height="200px" xmlns="http://www.w3c.org/2000/svg">
+        <path d="M100 10 100 100" style="stroke: gray;" />
+        <text x="100" y="30" style="text-anchor:start;">Start</text>
+        <text x="100" y="60" style="text-anchor:middle;">Middle</text>
+        <text x="100" y="90" style="text-anchor:end;">End</text>
+       
+    </svg>
+    <svg width="400px" height="400px" xmlns="http://www.w3c.org/2000/svg">
+        <defs>
+            <path id="curvepath" d="M 30 40 C50 10 70 10 120 40 S 150 0 200 40" style="stroke:gray; fill:none;" />
+            <path id="round-corner" d="M 250 30 L 300 30 A 30 30 0 0 1 330 60 L 330 110" style="stroke:gray; fill:none;" />
+            <path id="sharp-corner"  d="M 30 110 100 110 100 160" style="stroke:gray; fill:none;" />
+            <path id="discontinuous"  d="M 150 110 A 40 30 0 1 0 230 110 M 250 110 270 140" style="stroke:gray; fill:none;" />
+        </defs>
+        <g style="font-family: 'Liberation Sans'; font-size:10pt; ">
+            <use xlink:href="#curvepath" />
+            <text>
+                <textPath xlink:href="#curvepath">
+                    abcdefghijklmnopqrstuvwxyz
+                </textPath>
+            </text>
+            <use xlink:href="#round-corner" />
+            <text>
+                <textPath xlink:href="#round-corner">
+                    abcdefghijklmnopqrstuvwxyz
+                </textPath>
+            </text> 
+            <use xlink:href="#sharp-corner" />
+            <text>
+                <textPath xlink:href="#sharp-corner">
+                    abcdefghijklmnopqrstuvwxyz
+                </textPath>
+            </text>
+            <use xlink:href="#discontinuous" />
+            <text>
+                <textPath xlink:href="#discontinuous">
+                    abcdefghijklmnopqrstuvwxyz
+                </textPath>
+            </text>
+        </g>
 
 
 
+
+    </svg>
 
 
 
