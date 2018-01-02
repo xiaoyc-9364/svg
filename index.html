@@ -122,8 +122,50 @@
         <use xlink:href="#sym-octagon" x="40" y="110" width="30" height="30" style="fill:#c00;" />
         <use xlink:href="#sym-octagon" x="80" y="110" width="40" height="60" style="fill:#c00;" />
 
+        <h2>第七章</h2>
+        <p>画笔</p>
+        <svg width="150px" height="150px" viewBox="0 0 150 150" xmlns="http://www.w3c.org/2000/svg">
+            <g style="stroke: black; fill: none;">
+                <path d="M 10 10 L 100 10"/>
+                <path d="M 10 20 L 100 20 L 100 50" />
+                <path d="M 40 60 L 10 60 L 40 42.68 M 60 60 L 90 60 L 60 42.68"/>
+            </g>
+        
+        </svg>
+        <svg width="150px" height="150px" viewBox="0 0 150 150" xmlns="http://www.w3c.org/2000/svg">
+            <g style="stroke: black; fill: none;">
+                <path d="M 10 10 L 40 10 L 40 30 L 10 30 L 10 10" />
+                <path d="M 60 10 L 90 10 L 90 30 L 60 30 Z" />
+                <path d="M 40 60 L 10 60 L 40 42.68 Z M 60 60 L 90 60 L 60 42.68 Z"/>
+                <path d="M 12 24 h 15 v 25 h -15 z"/>
+            </g>
+        
+        </svg>
+        <svg width="400px" height="300px" viewBox="0 0 400 300" xmlns="http://www.w3c.org/2000/svg">
+            <ellipse cx="154" cy="154" rx="150" ry="120" style="fill:#999" />
+            <ellipse cx="152" cy="152" rx="150" ry="120" style="fill:#cceeff" />
+            <path d="M 302 152 A 150 120 0 1 0 2 152 A 75 60 0 1 0 152 152" style="fill:#fcc" />
+            <path d="M 152 152 A 75 60 0 1 1 302 152" style="fill: #cef" />
+            <!-- <path d="M 30 75 Q240 30, 300 120" style="stroke:black; fill: none;" /> -->
+            <path d="M30 100 Q 80 30 100 100 T 200 80" style="stroke:black; fill: none;" />
+        </svg>
+        <svg width="200x" height="200px" xmlns="http://www.w3c.org/2000/svg">
+            <defs>
+                <marker id="mCircle" markerWidth="10" markerHeight="10" refX="5" refY="5">
+                    <circle cx="5" cy="5" r="4" style="fill:none; stroke:black;" />
+                </marker>
+                <marker id="mArray" markerWidth="6" markerHeight="10" refX="0" refY="4" orient="auto">
+                    <path d="M 0 0 4 4 0 8" style="fill: none; stroke: black;" />
+                </marker>
+                <marker id="mTriangle" markerWidth="5" markerHeight="10" refX="5" refY="5" orient="auto">
+                    <path d="M 0 0 5 5 0 10 Z" style="fill: black;"/>
+                </marker>
+            </defs>
+
+            <path d="M 10 20 100 20 A 20 30 0 0 1 120 50 L 120 110" style="marker-start: url(#mCircle); marker-mid:url(#mArray); marker-end:url(#mTriangle);fill: none; stroke: black;"/>
 
 
+        </svg>
 
     </svg>
     
