@@ -91,5 +91,51 @@
        <polyline points="150 30, 165 15, 180 30" style="stroke-linejoin: bevel; stroke:black; stroke-width: 12; fill:none;" />
     </svg>
 
+
+    <h2>第五章</h2>
+    <p>组合</p>
+    <svg width="200px" height="200px" xmlns="http://www.3c.org/2000/svg">
+        <title>Symbol vs groups</title>
+        <desc>Use</desc>
+
+        <defs>
+            <g id="octagon" style="stroke: black;">
+                <desc>Octagon as group</desc>
+                <polygon points="36 25, 25 36, 11 36, 0 25, 0 11, 11 0, 25 0, 36 11" />
+            </g>
+
+            <symbol id="sym-octagon" style="stroke: black;" preserveAspectRatio="xMidYMid slice" viewBox="0 0 40 40">
+                <desc>Octagon as symbol</desc>
+                <polygon points="36 25, 25 36, 11 36, 0 25, 0 11, 11 0, 25 0, 36 11" />
+            </symbol>
+        </defs>
+        
+        <g style="fill: none; stroke: gray;">
+            <rect x="40" y="40" width="30" height="30" />
+            <rect x="80" y="40" width="40" height="60" />
+            <rect x="40" y="110" width="30" height="30" />
+            <rect x="80" y="110" width="40" height="60" />
+        </g>
+        
+        <use xlink:href="#octagon" x="40" y="40" width="30" height="30" style="fill:#c00;" />
+        <use xlink:href="#octagon" x="80" y="40" width="40" height="60" style="fill:#c00;" />
+        <use xlink:href="#sym-octagon" x="40" y="110" width="30" height="30" style="fill:#c00;" />
+        <use xlink:href="#sym-octagon" x="80" y="110" width="40" height="60" style="fill:#c00;" />
+
+
+
+
+    </svg>
+    
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
